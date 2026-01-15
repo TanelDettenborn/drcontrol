@@ -14,6 +14,8 @@ in
   python3Packages.buildPythonApplication {
     pname = "drcontrol";
     version = "0.13";
+    pyproject = true;
+    build-system = [ python3Packages.setuptools ];
     propagatedBuildInputs = [
       pylibftdiWithOverrides
     ];
